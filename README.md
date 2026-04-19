@@ -43,3 +43,13 @@ src/my_first_ai_agent/
 ├── telegram.py         # LangChain tool: send_message_to_telegram_bot
 └── found_cat_ids.txt   # Persisted list of already-seen cat IDs
 ```
+
+## .env keys
+```text
+AWS_ACCESS_KEY_ID=<your_access_key_id>
+AWS_SECRET_ACCESS_KEY=<your_secret_access_key>
+AWS_SESSION_TOKEN=<your_session_token>
+
+TELEGRAM_BOT_TOKEN=<your_bot_token>
+TELEGRAM_CHAT_ID=<your_chat_id>
+```
