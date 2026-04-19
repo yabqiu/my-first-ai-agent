@@ -4,8 +4,8 @@ from langchain.agents import create_agent
 from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, ToolMessage
 
-from my_ai_agent.tools import read_file, write_file, web_fetch
-from my_ai_agent.telegram import send_message_to_telegram_bot
+from my_first_ai_agent.tools import read_file, write_file, web_fetch
+from my_first_ai_agent.telegram import send_message_to_telegram_bot
 
 load_dotenv()
 

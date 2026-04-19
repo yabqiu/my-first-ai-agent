@@ -31,13 +31,13 @@ An AI agent that monitors a cat shelter website and sends Telegram notifications
 
 3. Run the agent:
    ```bash
-   uv run python -m my_ai_agent.cat_agent
+   uv run python -m my_first_ai_agent.cat_agent
    ```
 
 ## Project structure
 
 ```
-src/my_ai_agent/
+src/my_first_ai_agent/
 ├── cat_agent.py        # Main agent: task prompt and streaming loop
 ├── tools.py            # LangChain tools: read_file, write_file, web_fetch
 ├── telegram.py         # LangChain tool: send_message_to_telegram_bot
