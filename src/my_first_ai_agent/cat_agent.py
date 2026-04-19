@@ -50,6 +50,8 @@ For each found new cat, send a Telegram message to Bot 'Seek Cat' in HTML in fol
 ```
 
 Use local file 'found_cat_ids.txt' to store Cat IDs and determine if new cat.
+
+If there is no new cat, send a conclusion to Telegram bot so that we know the AI agent is executed.
 """
 
 for chunk in cat_agent.stream(
