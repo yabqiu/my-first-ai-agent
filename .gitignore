@@ -12,3 +12,9 @@ wheels/
 workspace/*
 .idea
 *.iml
+.DS_Store
+Archive.zip
+libs/
+.terraform*
+terraform.tfstate*
+variables.tf

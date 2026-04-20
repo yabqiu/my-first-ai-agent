@@ -1,4 +1,3 @@
-from langchain.tools import tool
 import requests
 
 from dotenv import load_dotenv
@@ -9,7 +8,6 @@ load_dotenv()
 bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
 chat_id = os.getenv("TELEGRAM_CHAT_ID")
 
-@tool
 def send_message_to_telegram_bot(html):
     """send message to Telegram Bot 'Seek Bot'"""
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
@@ -26,5 +24,5 @@ def send_message_to_telegram_bot(html):
         return "Error sending message, " + result["description"]
 
 if __name__ == "__main__":
-    response = send_message_to_telegram_bot("hello, find a new cat!")
+    response = send_message_to_telegram_bot("<b>hello, find a new cat!</b>")
     print(response)

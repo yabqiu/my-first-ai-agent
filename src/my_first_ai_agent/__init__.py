@@ -1,2 +1,3 @@
-def hello() -> str:
-    return "Hello from my-ai-agent!"
+from dotenv import load_dotenv
+
+load_dotenv()
