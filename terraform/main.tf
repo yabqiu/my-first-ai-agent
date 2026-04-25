@@ -2,8 +2,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = "6.42.0"
     }
+  }
+  backend "s3" {
+    bucket = "yanbin-data"
+    key = "ai-agent/terraform.tfstate"
+    region = "us-east-1"
   }
 }
 
